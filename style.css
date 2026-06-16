@@ -776,3 +776,13 @@ nav ul{
     height:75px;
     transform:translateY(5px);
 }
+.legal-info {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.legal-info p {
+    margin: 4px 0;
+}
