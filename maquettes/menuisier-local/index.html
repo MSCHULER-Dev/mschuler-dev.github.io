@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Atelier Weber, menuiserie artisanale et créations en bois sur mesure à Strasbourg."
+  >
+
+  <title>Atelier Weber | Menuiserie artisanale</title>
+<link
+  rel="icon"
+  type="image/png"
+  href="images/charpenterie.png"
+>  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="index.html" class="brand" aria-label="Atelier Weber, accueil">
+        <span class="brand-number">67</span>
+
+        <span class="brand-name">
+          Atelier
+          <strong>Weber</strong>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="#savoir-faire">Savoir-faire</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="#atelier">L’atelier</a></li>
+        <li><a href="devis.html" class="nav-contact">Votre projet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-background"></div>
+      <div class="hero-shade"></div>
+      <div class="wood-particles" id="wood-particles"></div>
+
+      <div class="hero-layout">
+        <div class="hero-main">
+          <p class="hero-kicker reveal">
+            Menuiserie artisanale · Strasbourg
+          </p>
+
+          <h1 class="hero-title">
+            <span class="reveal">Matière.</span>
+            <span class="outline reveal">Geste.</span>
+            <span class="reveal">Mesure.</span>
+          </h1>
+        </div>
+
+        <div class="hero-aside reveal">
+          <p>
+            Des pièces uniques, dessinées pour votre espace et façonnées
+            pour traverser le temps.
+          </p>
+
+          <a href="realisations.html" class="round-link">
+            <span>Explorer les projets</span>
+            <strong>↗</strong>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <p>Atelier indépendant depuis 2011</p>
+
+        <a href="#manifeste" class="scroll-link">
+          Découvrir
+          <span>↓</span>
+        </a>
+
+        <p>Conception · Fabrication · Pose</p>
+      </div>
+    </section>
+
+    <section class="manifesto" id="manifeste">
+      <div class="container manifesto-layout">
+        <p class="vertical-label">Notre approche</p>
+
+        <div class="manifesto-content reveal">
+          <p class="section-index">01 — La matière</p>
+
+          <h2>
+            Nous ne remplissons pas un espace.
+            <span>Nous lui donnons du caractère.</span>
+          </h2>
+
+          <p class="manifesto-text">
+            Chaque projet commence par l’écoute du lieu, de ses usages
+            et de ceux qui y vivent. Le bois est ensuite sélectionné,
+            travaillé et assemblé avec précision dans notre atelier.
+          </p>
+        </div>
+
+        <figure class="manifesto-image reveal">
+          <img
+            src="images/artisan-rabotage.png"
+            alt="Menuisier façonnant une pièce de bois avec un rabot"
+          >
+
+          <figcaption>
+            Le geste juste, répété jusqu’à devenir naturel.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="craft-section" id="savoir-faire">
+      <div class="craft-visual" id="craft-visual">
+        <img
+          id="craft-image"
+          src="images/outils-menuisier.png"
+          alt="Outils traditionnels de menuiserie"
+        >
+        <div class="craft-visual-shade"></div>
+
+        <p>
+          Six domaines.<br>
+          Une même exigence.
+        </p>
+      </div>
+
+      <div class="craft-content">
+        <div class="craft-heading reveal">
+          <p class="section-index">02 — Le savoir-faire</p>
+          <h2>Façonner le quotidien</h2>
+        </div>
+
+        <div class="craft-list">
+          <a
+            href="realisations.html?categorie=cuisine"
+            class="craft-item"
+            data-image="images/atelier-menuiserie.png"
+          >
+            <span>01</span>
+            <h3>Cuisines sur mesure</h3>
+            <p>Conception, optimisation et fabrication</p>
+            <strong>↗</strong>
+          </a>
+
+          <a
+            href="realisations.html?categorie=escalier"
+            class="craft-item"
+            data-image="images/scie-atelier.png"
+          >
+            <span>02</span>
+            <h3>Escaliers</h3>
+            <p>Création, rénovation et habillage</p>
+            <strong>↗</strong>
+          </a>
+
+          <a
+            href="realisations.html?categorie=dressing"
+            class="craft-item"
+            data-image="images/stock-bois.png"
+          >
+            <span>03</span>
+            <h3>Dressings</h3>
+            <p>Rangements intégrés et personnalisés</p>
+            <strong>↗</strong>
+          </a>
+
+          <a
+            href="realisations.html?categorie=porte"
+            class="craft-item"
+            data-image="images/outils-menuisier.png"
+          >
+            <span>04</span>
+            <h3>Portes et ouvertures</h3>
+            <p>Bois massif, finitions et restauration</p>
+            <strong>↗</strong>
+          </a>
+
+          <a
+            href="realisations.html?categorie=terrasse"
+            class="craft-item"
+            data-image="images/scie-atelier.png"
+          >
+            <span>05</span>
+            <h3>Terrasses</h3>
+            <p>Aménagements extérieurs durables</p>
+            <strong>↗</strong>
+          </a>
+
+          <a
+            href="realisations.html?categorie=mobilier"
+            class="craft-item"
+            data-image="images/atelier-menuiserie.png"
+          >
+            <span>06</span>
+            <h3>Mobilier unique</h3>
+            <p>Tables, bureaux et bibliothèques</p>
+            <strong>↗</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wood-lab">
+      <div class="container">
+        <div class="wood-heading reveal">
+          <div>
+            <p class="section-index">03 — Les essences</p>
+            <h2>Choisissez votre caractère</h2>
+          </div>
+
+          <p>
+            Chaque essence possède une couleur, un toucher et une
+            personnalité qui lui sont propres.
+          </p>
+        </div>
+
+        <div class="wood-selector">
+          <div class="wood-preview" id="wood-preview">
+            <div class="wood-grain"></div>
+
+            <div class="wood-information">
+              <p id="wood-origin">France · Forêts gérées durablement</p>
+              <h3 id="wood-name">Chêne</h3>
+              <p id="wood-description">
+                Résistant, intemporel et marqué par un veinage généreux.
+              </p>
+            </div>
+          </div>
+
+          <div class="wood-options" role="group" aria-label="Choisir une essence">
+            <button
+              class="wood-option active"
+              type="button"
+              data-wood="oak"
+              data-name="Chêne"
+              data-origin="France · Forêts gérées durablement"
+              data-description="Résistant, intemporel et marqué par un veinage généreux."
+            >
+              <span class="wood-swatch oak"></span>
+              <span>
+                <strong>Chêne</strong>
+                <small>Équilibré et durable</small>
+              </span>
+            </button>
+
+            <button
+              class="wood-option"
+              type="button"
+              data-wood="walnut"
+              data-name="Noyer"
+              data-origin="Europe · Sélection premium"
+              data-description="Profond, élégant et recherché pour ses nuances contrastées."
+            >
+              <span class="wood-swatch walnut"></span>
+              <span>
+                <strong>Noyer</strong>
+                <small>Sombre et élégant</small>
+              </span>
+            </button>
+
+            <button
+              class="wood-option"
+              type="button"
+              data-wood="ash"
+              data-name="Frêne"
+              data-origin="France · Approvisionnement local"
+              data-description="Lumineux, souple et idéal pour les intérieurs contemporains."
+            >
+              <span class="wood-swatch ash"></span>
+              <span>
+                <strong>Frêne</strong>
+                <small>Clair et contemporain</small>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="atelier-section" id="atelier">
+      <div class="atelier-background"></div>
+      <div class="atelier-shade"></div>
+
+      <div class="container atelier-content">
+        <p class="section-index light">04 — Dans l’atelier</p>
+
+        <div class="atelier-title reveal">
+          <h2>Entre précision mécanique et maîtrise manuelle</h2>
+
+          <p>
+            Les machines préparent. Les mains ajustent. L’œil contrôle
+            chaque détail avant que la pièce ne quitte l’atelier.
+          </p>
+        </div>
+
+        <div class="atelier-details">
+          <article class="reveal">
+            <strong>01</strong>
+            <h3>Dessiner</h3>
+            <p>Comprendre les volumes et anticiper chaque assemblage.</p>
+          </article>
+
+          <article class="reveal">
+            <strong>02</strong>
+            <h3>Façonner</h3>
+            <p>Découper, raboter et ajuster avec une grande précision.</p>
+          </article>
+
+          <article class="reveal">
+            <strong>03</strong>
+            <h3>Révéler</h3>
+            <p>Poncer et protéger pour faire ressortir toute la matière.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-project">
+      <div class="container">
+        <div class="project-heading reveal">
+          <p class="section-index">05 — Projet choisi</p>
+          <h2>Une bibliothèque dessinée autour de la lumière</h2>
+        </div>
+
+        <div class="project-showcase">
+          <div class="project-picture large reveal">
+            <img
+              src="images/atelier-menuiserie.png"
+              alt="Atelier de menuiserie artisanal"
+            >
+
+            <span>Étude et préparation</span>
+          </div>
+
+          <div class="project-description reveal">
+            <p>
+              Une réalisation pensée comme une architecture intérieure :
+              rangements discrets, niches ouvertes et continuité parfaite
+              avec les lignes de la pièce.
+            </p>
+
+            <dl>
+              <div>
+                <dt>Essence</dt>
+                <dd>Chêne naturel</dd>
+              </div>
+
+              <div>
+                <dt>Durée</dt>
+                <dd>6 semaines</dd>
+              </div>
+
+              <div>
+                <dt>Lieu</dt>
+                <dd>Strasbourg</dd>
+              </div>
+            </dl>
+
+            <a href="realisations.html" class="round-link dark">
+              <span>Voir l’étude complète</span>
+              <strong>↗</strong>
+            </a>
+          </div>
+
+          <div class="project-picture reveal">
+            <img
+              src="images/stock-bois.png"
+              alt="Planches de bois sélectionnées pour une fabrication"
+            >
+
+            <span>Sélection de la matière</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-cta">
+      <div class="project-cta-image"></div>
+      <div class="project-cta-shade"></div>
+
+      <div class="container project-cta-content">
+        <p class="section-index light">06 — Votre idée</p>
+
+        <h2 class="reveal">
+          Et si votre prochain meuble n’existait encore nulle part ?
+        </h2>
+
+        <a href="devis.html" class="cta-link reveal">
+          <span>Racontez-nous votre projet</span>
+          <strong>↗</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <a href="index.html" class="brand footer-brand">
+        <span class="brand-number">67</span>
+
+        <span class="brand-name">
+          Atelier
+          <strong>Weber</strong>
+        </span>
+      </a>
+
+      <p>
+        Menuiserie artisanale<br>
+        et agencement sur mesure.
+      </p>
+
+      <div class="footer-contact">
+        <a href="tel:+33300000000">03 00 00 00 00</a>
+        <a href="mailto:contact@atelier-weber.fr">
+          contact@atelier-weber.fr
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-links">
+      <nav aria-label="Navigation du pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="#savoir-faire">Savoir-faire</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="devis.html">Votre projet</a>
+      </nav>
+
+      <address>
+        12 rue des Artisans<br>
+        67000 Strasbourg
+      </address>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Atelier Weber</p>
+      <p>Maquette fictive réalisée pour portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

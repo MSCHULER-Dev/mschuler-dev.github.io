@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Découvrez les réalisations sur mesure de l’Atelier Weber à Strasbourg."
+  >
+
+  <title>Réalisations | Atelier Weber</title>
+<link
+  rel="icon"
+  type="image/png"
+  href="images/charpenterie.png"
+>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner-page">
+  <div
+    class="scroll-progress"
+    id="scroll-progress"
+  ></div>
+
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a
+        href="index.html"
+        class="brand"
+        aria-label="Atelier Weber, accueil"
+      >
+        <span class="brand-number">67</span>
+
+        <span class="brand-name">
+          Atelier
+          <strong>Weber</strong>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="index.html">
+            Accueil
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#savoir-faire">
+            Savoir-faire
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="realisations.html"
+            class="active"
+          >
+            Réalisations
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#atelier">
+            L’atelier
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="devis.html"
+            class="nav-contact"
+          >
+            Votre projet
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projects-hero">
+      <div class="container projects-hero-content">
+        <p class="section-index">
+          Projets sélectionnés
+        </p>
+
+        <h1 class="reveal">
+          Des espaces pensés<br>
+          <span>dans les moindres détails.</span>
+        </h1>
+
+        <p class="projects-introduction reveal">
+          Cuisines, escaliers, rangements et mobilier :
+          chaque réalisation naît d’un lieu, d’un usage
+          et d’une rencontre.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <div class="container">
+        <div
+          class="projects-filters"
+          role="group"
+          aria-label="Filtrer les réalisations"
+        >
+          <button
+            class="project-filter active"
+            type="button"
+            data-filter="all"
+            aria-pressed="true"
+          >
+            Tous
+          </button>
+
+          <button
+            class="project-filter"
+            type="button"
+            data-filter="cuisine"
+            aria-pressed="false"
+          >
+            Cuisines
+          </button>
+
+          <button
+            class="project-filter"
+            type="button"
+            data-filter="escalier"
+            aria-pressed="false"
+          >
+            Escaliers
+          </button>
+
+          <button
+            class="project-filter"
+            type="button"
+            data-filter="dressing"
+            aria-pressed="false"
+          >
+            Rangements
+          </button>
+
+          <button
+            class="project-filter"
+            type="button"
+            data-filter="mobilier"
+            aria-pressed="false"
+          >
+            Mobilier
+          </button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJET 01 : CUISINE HORIZON -->
+
+          <article
+            class="project-card reveal"
+            data-category="cuisine"
+          >
+            <div class="project-card-image">
+              <img
+                src="images/realisation-cuisine-horizon.png"
+                alt="Cuisine contemporaine en chêne réalisée sur mesure"
+              >
+            </div>
+
+            <div class="project-card-content">
+              <div>
+                <p>Cuisine · Strasbourg</p>
+                <h2>Cuisine Horizon</h2>
+              </div>
+
+              <span>01</span>
+            </div>
+          </article>
+
+          <!-- PROJET 02 : ESCALIER -->
+
+          <article
+            class="project-card project-card-tall reveal"
+            data-category="escalier"
+          >
+            <div class="project-card-image">
+              <img
+                src="images/realisation-escalier-suspendu.png"
+                alt="Escalier contemporain suspendu en bois massif"
+              >
+            </div>
+
+            <div class="project-card-content">
+              <div>
+                <p>Escalier · Obernai</p>
+                <h2>Ligne suspendue</h2>
+              </div>
+
+              <span>02</span>
+            </div>
+          </article>
+
+          <!-- PROJET 03 : TABLE EN NOYER -->
+
+          <article
+            class="project-card reveal"
+            data-category="mobilier"
+          >
+            <div class="project-card-image">
+              <img
+                src="images/realisation-table-heritage.png"
+                alt="Table en noyer massif fabriquée artisanalement"
+              >
+            </div>
+
+            <div class="project-card-content">
+              <div>
+                <p>Mobilier · Strasbourg</p>
+                <h2>Table Héritage</h2>
+              </div>
+
+              <span>03</span>
+            </div>
+          </article>
+
+          <!-- PROJET 04 : DRESSING -->
+
+          <article
+            class="project-card project-card-wide reveal"
+            data-category="dressing"
+          >
+            <div class="project-card-image">
+              <img
+                src="images/realisation-dressing-colmar.png"
+                alt="Dressing intégré réalisé sur mesure en bois clair"
+              >
+            </div>
+
+            <div class="project-card-content">
+              <div>
+                <p>Rangement · Colmar</p>
+                <h2>Le mur discret</h2>
+              </div>
+
+              <span>04</span>
+            </div>
+          </article>
+
+          <!-- PROJET 05 : CUISINE FAMILIALE -->
+
+          <article
+            class="project-card reveal"
+            data-category="cuisine"
+          >
+            <div class="project-card-image">
+              <img
+                src="images/realisation-cuisine-famille.png"
+                alt="Cuisine familiale en bois fabriquée sur mesure"
+              >
+            </div>
+
+            <div class="project-card-content">
+              <div>
+                <p>Cuisine · Sélestat</p>
+                <h2>Maison de famille</h2>
+              </div>
+
+              <span>05</span>
+            </div>
+          </article>
+
+          <!-- PROJET 06 : BIBLIOTHÈQUE -->
+
+          <article
+            class="project-card reveal"
+            data-category="mobilier"
+          >
+            <div class="project-card-image">
+              <img
+                src="images/realisation-bibliotheque-lumiere.png"
+                alt="Bibliothèque en chêne naturel construite autour d’une fenêtre"
+              >
+            </div>
+
+            <div class="project-card-content">
+              <div>
+                <p>Bibliothèque · Strasbourg</p>
+                <h2>Autour de la lumière</h2>
+              </div>
+
+              <span>06</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-cta">
+      <div class="container projects-cta-layout">
+        <p class="section-index light">
+          Votre projet
+        </p>
+
+        <h2 class="reveal">
+          Une idée particulière<br>
+          mérite une réponse unique.
+        </h2>
+
+        <a
+          href="devis.html"
+          class="cta-link reveal"
+        >
+          <span>Parlons de votre projet</span>
+          <strong>↗</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-top">
+      <a
+        href="index.html"
+        class="brand footer-brand"
+      >
+        <span class="brand-number">67</span>
+
+        <span class="brand-name">
+          Atelier
+          <strong>Weber</strong>
+        </span>
+      </a>
+
+      <p>
+        Menuiserie artisanale<br>
+        et agencement sur mesure.
+      </p>
+
+      <div class="footer-contact">
+        <a href="tel:+33300000000">
+          03 00 00 00 00
+        </a>
+
+        <a href="mailto:contact@atelier-weber.fr">
+          contact@atelier-weber.fr
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer-links">
+      <nav aria-label="Navigation du pied de page">
+        <a href="index.html">
+          Accueil
+        </a>
+
+        <a href="index.html#savoir-faire">
+          Savoir-faire
+        </a>
+
+        <a href="realisations.html">
+          Réalisations
+        </a>
+
+        <a href="devis.html">
+          Votre projet
+        </a>
+      </nav>
+
+      <address>
+        12 rue des Artisans<br>
+        67000 Strasbourg
+      </address>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Atelier Weber</p>
+
+      <p>
+        Maquette fictive réalisée pour portfolio
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
