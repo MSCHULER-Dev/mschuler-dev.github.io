@@ -776,13 +776,331 @@ nav ul{
     height:75px;
     transform:translateY(5px);
 }
-.legal-info {
-    margin-top: 25px;
-    font-size: 0.9rem;
-    color: #cbd5e1;
-    line-height: 1.6;
+.status-card .btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 22px;
+  background: #2196f3;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
 }
 
-.legal-info p {
-    margin: 4px 0;
+.status-card .btn:hover {
+  background: #0b7dda;
+  transform: translateY(-3px);
+}
+/* --- NOUVELLE SECTION COMPÉTENCES --- */
+.competences {
+  padding: 80px 0;
+  background-color: #010816; /* Assure un fond sombre continu */
+  text-align: center;
+}
+
+.competences h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* La grille qui contient les 3 cartes */
+.skills-grid {
+  display: grid;
+  /* Crée des colonnes automatiques de minimum 300px, centrées */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1000px; /* Aligne la largeur sur le reste du site */
+  margin: 0 auto; /* Centre la grille dans la section */
+  padding: 0 20px; /* Marge de sécurité pour le mobile */
+}
+
+/* Style commun pour chaque carte */
+.skill-card {
+  background: #0b1329; /* Fond bleu très foncé */
+  border: 1px solid #1e293b; /* Bordure discrète */
+  border-radius: 14px;
+  padding: 30px 25px;
+  text-align: left; /* Texte aligné à gauche dans la carte */
+  
+  /* Flexbox pour bien espacer le contenu verticalement */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  /* Animation au survol */
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol de la carte (hover) */
+.skill-card:hover {
+  transform: translateY(-6px); /* Soulève la carte */
+  border-color: #0070f3; /* Bordure bleue au survol */
+  box-shadow: 0 10px 25px rgba(0, 112, 243, 0.2); /* Lueur bleue */
+}
+
+/* En-tête de la carte (Icône + Titre) */
+.skill-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.skill-icon {
+  font-size: 2rem; /* Taille de l'émoji */
+}
+
+.skill-card h3 {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Paragraphe de description */
+.skill-card p {
+  color: #94a3b8; /* Texte gris clair */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 20px 0; /* Marge uniquement en bas */
+  flex-grow: 1; /* Pousse les tags vers le bas si le texte est court */
+}
+
+/* Conteneur des petits badges (tags) */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap; /* Permet le retour à la ligne des tags */
+  gap: 8px;
+  margin-top: auto; /* Force l'alignement en bas de carte */
+}
+
+/* Style de chaque badge (tag) */
+.skill-tags .tag {
+  background: #132247; /* Fond bleu légèrement plus clair que la carte */
+  color: #38bdf8; /* Texte bleu cyan */
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 20px;
+  letter-spacing: 0.3px;
+  white-space: nowrap; /* Empêche un tag de se couper en deux */
+}
+/* --- SECTION COMPÉTENCES (HARMONISÉE MOBILE) --- */
+.competences {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.competences h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.skill-card {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: #0070f3;
+  box-shadow: 0 8px 20px rgba(0, 112, 243, 0.18);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.skill-icon {
+  font-size: 1.4rem;
+}
+
+.skill-card h3 {
+  color: #ffffff;
+  font-size: 1.15rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.skill-card p {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.skill-tags .tag {
+  background: #132247;
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+
+/* Ajustement spécifique petits écrans */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+}
+.skill-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.tag-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+}
+
+.skill-tags .tag {
+  background: #132247;
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 5px 8px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+/* Rend la carte flexible verticalement */
+.portfolio .card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pousse le bouton automatiquement tout en bas */
+.portfolio .card .btn {
+  margin-top: auto;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.services .card {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 28px 22px;
+  text-align: left;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.services .card:hover {
+  transform: translateY(-4px);
+  border-color: #0070f3;
+}
+
+.services .card h3 {
+  color: #38bdf8;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.services .card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+.contact {
+  padding: 80px 0;
+  position: relative;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 800px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.3), transparent);
+}
+/* Cartes compétences */
+.skill-card {
+  padding: 20px 12px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Conteneur global des badges */
+.skill-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  width: 100%;
+}
+
+/* Lignes de badges */
+.tag-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Autorise le retour à la ligne automatique si l'écran est minuscule */
+  gap: 5px;
+  width: 100%;
+}
+
+/* Style individuel d'un badge */
+.skill-tags .tag {
+  background: #132247;
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 4px 6px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 12px;
+  white-space: nowrap;
 }
